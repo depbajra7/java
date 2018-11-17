@@ -1,0 +1,3 @@
+com\mypackage\service\HelloService.class
+com\mypackage\HelloController.class
+com\mypackage\dao\HelloDAO.class

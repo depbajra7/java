@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="emp" class="com.mypackage.Employee">
+		<constructor-arg value="1" />
+		<constructor-arg value="John" />
+		<constructor-arg value="4500" />
+		<constructor-arg ref="addr" />
+
+	</bean>
+
+	<bean id="addr" class="com.mypackage.Address">
+		<constructor-arg value="100" />
+		<constructor-arg value="PA" />
+		<constructor-arg value="12345" />
+	</bean>
+
+</beans>
